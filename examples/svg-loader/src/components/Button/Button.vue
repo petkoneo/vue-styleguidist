@@ -1,20 +1,4 @@
 <template>
-<<<<<<< HEAD
-	<button @click="onClick($event)">
-		<span v-if="!!$slots.leftIcon" class="left-icon">
-			<!-- @slot Use this slot to place the left icon content -->
-			<slot name="leftIcon" />
-		</span>
-		<!-- @slot Use this slot to place the button content -->
-		<slot>
-			No content provided
-		</slot>
-	</button>
-</template>
-
-<script>
-
-=======
   <button @click="onClick($event)">
     <span v-if="!!$slots.leftIcon" class="left-icon">
       <!-- @slot Use this slot to place the left icon content -->
@@ -26,7 +10,6 @@
 </template>
 
 <script>
->>>>>>> upstream/dev
 export default {
 	name: 'Button',
 	methods: {
@@ -78,31 +61,6 @@ span.left-icon {
 </style>
 
 <docs>
-<<<<<<< HEAD
-	Icon on the right Side
-
-	```vue
-	<template>
-		<Button>
-			<template v-slot:leftIcon>
-				<test-icon></test-icon>
-			</template>
-			Push Me
-		</Button>
-	</template>
-
-	<script>
-		const TestIcon = require('../../assets/logo.svg')
-		// You can also use 'exports.default = {}' style module exports.
-
-		export default {
-			components: {
-				TestIcon
-			}
-		}
-	</script>
-	```
-=======
 Icon on the right Side
 
 ```vue
@@ -126,5 +84,4 @@ export default {
 }
 </script>
 ```
->>>>>>> upstream/dev
 </docs>
